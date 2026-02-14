@@ -1,0 +1,164 @@
+body { 
+  font-family: 'Arial', sans-serif;
+  background-color: #BDC4D4;   /* Light background */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:900;
+  color: #1C2E4A;   /* Dark heading */
+}
+
+.tagline {
+  font-size: 14px;
+  color: #1C2E4A;   /* Dark text */
+  margin-bottom: 20px;
+}
+
+/* SECTION CARDS */
+.section {
+  background: #ffffff;
+  margin: 15px auto;
+  padding: 15px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button {
+  background-color: #BDC4D4;   /* Light button */
+  color: #1C2E4A;              /* Dark text */
+  border: none;
+  padding: 12px;
+  margin: 15px auto;
+  text-align: center;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #1C2E4A;   /* Dark on hover */
+  color: white;
+}
+
+/* SOS BUTTON SPECIAL */
+.sos-btn {
+  background-color: #1C2E4A;   /* Dark main SOS */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+/* INPUT FIELD */
+input {
+  padding: 10px;
+  width: 85%;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #BDC4D4;   /* Light border */
+}
+
+/* FAKE CALL POPUP */
+.fake-call {
+  display: none;
+  background: #ffffff;
+  border: 2px solid #1C2E4A;   /* Dark border */
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 12px;
+}
+
+/* PULSE ANIMATION */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(28,46,74,0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(28,46,74,0); }
+  100% { box-shadow: 0 0 0 0 rgba(28,46,74,0); }
+}
+
+#authBtn {
+  background: #1C2E4A;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#authBtn:hover {
+  background: #BDC4D4;
+  color: #1C2E4A;
+}
+/* Container for the contact list */
+#contactList {
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 10px 0;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Each contact item */
+#contactList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BDC4D4;
+  color: #1C2E4A;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Delete button */
+#contactList li button {
+  background-color: #1C2E4A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Delete button hover effect */
+#contactList li button:hover {
+  background-color: #16253d;
+}
+
+/* Input and save button styling */
+#contactName, #contactNumber {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #1C2E4A;
+  margin-right: 5px;
+}
+
+button[onclick="saveContact()"] {
+  background-color: #1C2E4A;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[onclick="saveContact()"]:hover {
+  background-color: #16253d;
+}
