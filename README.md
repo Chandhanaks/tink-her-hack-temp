@@ -2,27 +2,30 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [HerSafe] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [LAVA]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Chandhana k s] - [Jyothi Engineering College ]
+- Member 2: [Krishna kripa K] - [Jyothi Engineering College]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Hersafe is a brower-based safety platform that allows users to save emergency,share live location via whatsapp web with a single SOS button and use a fake call feature for personal safety]
 
 ### The Problem statement
-[What problem are you solving?]
+[Women often face safety issues while travelling alone and need quick way to alert trusted contacts in emergency ]
 
 ### The Solution
-[How are you solving it?]
+[HerSafe solves this by:
+Saving multiple emergency contacts with country code
+Sending live location instantly via WhatsApp Web
+Providing a fake call to create an emergency exit]
 
 ---
 
@@ -31,10 +34,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [HTML, CSS, JavaScript]
+- Frameworks used: [no external frameworks used]
+- Libraries used: [ localStorage API, Browser Geolocation API]
+- Tools used: [vs code]
 
 **For Hardware:**
 - Main components: [List main components]
