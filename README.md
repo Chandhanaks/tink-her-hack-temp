@@ -16,17 +16,14 @@
 [https://serene-peony-0bd839.netlify.app/]
 
 ### Project Description
-[Hersafe is a brower-based safety platform that allows users to save emergency,share live location via whatsapp web with a single SOS button and use a fake call feature for personal safety]
+[Hersafe is a brower-based safety platform that allows users to save emergency contacts,share live location  with a single SOS button, a fake call feature for personal safety and use a moodmood tracker]
 
 ### The Problem statement
 [Women often face safety issues while travelling alone and need quick way to alert trusted contacts in emergency ]
 
 ### The Solution
 [HerSafe solves this by:
-Saving multiple emergency contacts with country code
-Sending live location instantly via WhatsApp Web
-Providing a fake call to create an emergency exit]
-
+Saving multiple emergency contacts, sharing live location instantly,fake call feature, mood tracker, daily affirmations popup for confidence building]
 ---
 
 ## Technical Details
@@ -52,13 +49,7 @@ List the key features of your project:
 - Feature 1: [Emergency contacts]
 - Feature 2: [SOS Button]
 - Feature 3: [Fake Call Feature]
-- Feature 4: [Beginner friendly]
-
----
-
-## Implementation
-
-### For Software:
+- Feature 4: [Mood Tracker]
 
 ---
 
