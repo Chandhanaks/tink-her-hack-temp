@@ -13,10 +13,10 @@
 - Member 2: [Krishna kripa K] - [Jyothi Engineering College]
 
 ### Hosted Project Link
-[https://serene-peony-0bd839.netlify.app/]
+https://hersafee.netlify.app/
 
 ### Project Description
-[Hersafe is a brower-based safety platform that allows users to save emergency contacts,share live location  with a single SOS button, a fake call feature for personal safety and use a moodmood tracker]
+[Hersafe is a brower-based safety platform that allows users to save emergency contacts,share live location  with a single SOS button, a fake call feature for personal safety and use a mood tracker]
 
 ### The Problem statement
 [Women often face safety issues while travelling alone and need quick way to alert trusted contacts in emergency ]
@@ -59,21 +59,36 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-<img width="1870" height="897" alt="Screenshot 2026-02-14 095327" src="https://github.com/user-attachments/assets/e8d57929-c19e-4951-8092-39c5bb689ef2" />
+<img width="1893" height="893" alt="Screenshot 2026-03-01 231800" src="https://github.com/user-attachments/assets/664cfb4e-a86d-4a6f-8a64-9abef6e3f4ec" />
 
-*Emergency contacts*
+*Login/Signup*
 
 ![Screenshot2]
-<img width="1833" height="899" alt="Screenshot 2026-02-14 100531" src="https://github.com/user-attachments/assets/a984ae68-a4b1-41e7-be7d-c1f47fe82797" />
-*locations of the nearest police stations*
+
+<img width="1847" height="898" alt="Screenshot 2026-03-01 231822" src="https://github.com/user-attachments/assets/08bc925e-0a21-426d-9146-0fa53c59a338" />
+
+*Dashboard*
 
 ![Screenshot3]
-<img width="1871" height="896" alt="Screenshot 2026-02-14 100739" src="https://github.com/user-attachments/assets/2d7fe19e-7d35-4234-9701-ea63d9fbce0f" />
+<img width="1859" height="897" alt="Screenshot 2026-03-01 231849" src="https://github.com/user-attachments/assets/5dabb682-a8aa-47aa-a928-becad4f72ffc" />
+
 *Fake Call feature*
+
+![Screenshot4]
+
+<img width="1896" height="911" alt="Screenshot 2026-03-01 231908" src="https://github.com/user-attachments/assets/1bbe3d07-8557-4b15-8ef5-87f635babefa" />
+
+*Mood Tracker*
+
+![Screenshot5]
+
+<img width="1908" height="908" alt="Screenshot 2026-03-01 231923" src="https://github.com/user-attachments/assets/c5121af8-73cc-4014-8ec9-c915d4022cf7" />
+
+*Emergency Contacts*
+
 #### Diagrams
 
 **System Architecture:**
-![WhatsApp Image 2026-02-14 at 10 17 21 AM](https://github.com/user-attachments/assets/ac0229b0-77c0-45eb-9d81-358ef16ddf3b)
 
 
 Components: HTML/CSS/JS, Browser APIs, localStorage
@@ -81,7 +96,7 @@ Components: HTML/CSS/JS, Browser APIs, localStorage
 
 
 **Application Workflow:*
-!![WhatsApp Image 2026-02-14 at 10 22 38 AM](https://github.com/user-attachments/assets/2527b134-a06f-46d0-b8c4-fb34acaad186)
+
 *1. User saves contacts
 2. User presses SOS
 3. Browser fetches location
@@ -94,10 +109,10 @@ Fake Call workflow: Press Fake Call → Incoming call simulation → Accept/Decl
 ## Project Demo
 
 ### Video
-[https://youtu.be/R0EaBAz_tlc?si=UIeQC0SWqmvb5qTC]
+https://drive.google.com/file/d/1_WJrO3AxjAef5LDimMQI94u32ok-va2P/view?usp=drivesdk
 
 *Emergency Contacts: Add multiple contacts with names and phone numbers; saved locally in the browser.
-SOS Button: Sends your live location to all saved contacts via WhatsApp Web with a pre-filled message.
+SOS Button: Sends your live location to all saved contacts  with a pre-filled message.
 Fake Call: Simulates an incoming call; can accept or decline for personal safety.
 Persistent & Privacy-Friendly: All data stored in browser localStorage; no backend needed.*
 
