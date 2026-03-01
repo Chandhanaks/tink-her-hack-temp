@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HerSafe - Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="mood-container">
+
+  <h1>💌 Mood & Confidence</h1>
+  <p class="subtitle">Your feelings matter. Stay strong, stay safe.</p>
+
+  <!-- Mood Selection -->
+  <div class="mood-options">
+    <span onclick="selectMood('😊')">😊</span>
+    <span onclick="selectMood('😐')">😐</span>
+    <span onclick="selectMood('😟')">😟</span>
+  </div>
+
+  <!-- Confidence Note -->
+  <textarea id="confidenceNote" placeholder="Write a confidence note for yourself..."></textarea>
+
+  <!-- Safety Note -->
+  <textarea id="safetyNote" placeholder="Why do you feel safe today?"></textarea>
+
+  <button class="save-btn" onclick="saveMood()">Save Mood</button>
+
+  <h3>Your Mood History</h3>
+  <ul id="moodHistory"></ul>
+
+  
+  <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+  
+</div>
+
+<script src="mood.js"></script>
+</body>
+</html>

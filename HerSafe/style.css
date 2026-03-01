@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+/* 🔝 FULL HEADER AREA */
+.header {
+  background: #F1F5F9;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/*  BANNER */
+.banner-box {
+  background:white;
+  padding: 25px 500px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap:15px;
+  justify-content: flex-start;
+  padding-left: 30;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Banner Text Container */
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Tagline */
+.tagline {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1F2937;      
+  opacity: 0.85;        
+  letter-spacing: 0.5px;
+  @media (max-width:480px){
+    .tagline{
+        font-size: 14px;
+    }
+  }
+}
+
+/* 🖼 LOGO IMAGE */
+.logo-img {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+  margin-left: -80px;
+}
+
+/* 📝 TEXT */
+.banner-box h1 {
+  margin: 0;
+  font-size: 70px;
+  font-weight: 800;
+  color: #1F2937;
+  letter-spacing: 1px;
+}
+
+/* 🔐 AUTH BOX */
+.auth-container {
+  background: #cee9ff;
+  width: 320px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8 20px rgba(255, 238, 238, 0.8);
+  text-align: center;
+}
+
+.auth-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #3b3c56;
+  border-radius: 8px;
+}
+
+.auth-container button {
+  background: #37505a;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  width: 95%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-container span {
+  color: #FF6B9A;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  gap: 15px;
+}
+
+.dashboard-btn {
+  width: 250px;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: #b5d9fd;
+  color: #1F2937;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-btn:hover {
+  background: #84d1a5;
+}
+
+.dashboard-btn.logout {
+  background: #3f4e6c;
+  color: white;
+}
+fake-call {
+  background: #F9FAFB;
+  border: 2px solid #A5B4FC;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+contacts-container {
+  width: 350px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contacts-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #BDC4D4;
+  border-radius: 8px;
+}
+
+.contacts-container button {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: #8ec5dc;
+  color: #1F2937;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contacts-container ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.contacts-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  background: #F3F4F6;
+  border-radius: 8px;
+}
+
+.contacts-container li button {
+  background: #5787a3;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.fakecall-screen {
+  height: 100vh;
+  background: linear-gradient(to bottom, #1C2E4A, #3B4E76);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.caller-name {
+  font-size: 34px;
+  margin-top: 15px;
+}
+
+.caller-status {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.call-buttons {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.accept-btn, .decline-btn, .end-btn {
+  width: 130px;
+  height: 55px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.accept-btn {
+  background-color: #34C759;
+}
+
+.decline-btn {
+  background-color: #FF3B30;
+}
+
+.end-btn {
+  background-color: #FF3B30;
+  margin-top: 20px;
+}
+
+.active-call {
+  display: none;
+}
+.mood-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #dbf1fa;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #1C2E4A;
+  margin-bottom: 15px;
+}
+
+.mood-options span {
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 90%;
+  height: 70px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+#moodHistory {
+  list-style: none;
+  padding: 0;
+}
+
+#moodHistory li {
+  background: white;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #2f4569;
+}
+.mood-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(219, 247, 255);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 12px;
+  color: #1C2E4A;
+  text-align: left;
+}
+
+.delete-mood {
+  background: #fffefe;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Save Mood Button */
+.save-btn {
+  background: #1C2E4A;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Back Button */
+.back-btn {
+  background: #FFFFFF;
+  color: #1C2E4A;
+  border: 2px solid #1C2E4A;
+  padding: 10px 18px;
+  border-radius: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+

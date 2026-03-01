@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HerSafe - Emergency Contacts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header">
+  <div class="banner-box">
+    <img src="logo.png" alt="HerSafe Logo" class="logo-img">
+    <h1>HerSafe</h1>
+  </div>
+</header>
+
+<div class="contacts-container">
+  <h2>Saved Emergency Contacts</h2>
+
+  <input type="text" id="contactName" placeholder="Enter Name">
+  <input type="text" id="contactNumber" placeholder="Enter Phone Number (+country code)">
+  <button onclick="saveContact()">Save Contact</button>
+
+  <ul id="contactList"></ul>
+
+  <button onclick="window.location.href='dashboard.html'" class="dashboard-btn">⬅ Back to Dashboard</button>
+</div>
+
+<script src="contacts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Incoming Call - HerSafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="fakecall-screen">
+
+
+  <!-- Caller Name -->
+  <h1 class="caller-name">Mom</h1>
+  <p class="caller-status">Incoming Call...</p>
+
+  <!-- Call Buttons -->
+  <div class="call-buttons">
+    <button class="decline-btn" onclick="declineCall()">Decline</button>
+    <button class="accept-btn" onclick="acceptCall()">Accept</button>
+  </div>
+
+  <!-- Active Call Screen -->
+  <div id="callActive" class="active-call">
+    <p>🟢 Talking with Mom...</p>
+    <button class="end-btn" onclick="endCall()">End Call</button>
+  </div>
+
+</div>
+
+<!-- 🔊 Local Ringtone -->
+<audio id="ringtone" loop>
+  <source src="ringtone.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let ringtone = document.getElementById("ringtone");
+
+/* Play ringtone on first user tap (browser autoplay rule) */
+document.body.addEventListener("click", function () {
+  if (ringtone.paused) {
+    ringtone.play().catch(() => {
+      console.log("Audio play blocked");
+    });
+  }
+}, { once: true });
+
+/* ACCEPT CALL */
+function acceptCall() {
+  ringtone.pause();
+  ringtone.currentTime = 0;
+
+  document.querySelector(".call-buttons").style.display = "none";
+  document.getElementById("callActive").style.display = "block";
+  document.querySelector(".caller-status").innerText = "Call Connected";
+}
+
+/* DECLINE CALL */
+function declineCall() {
+  ringtone.pause();
+  ringtone.currentTime = 0;
+  window.location.href = "dashboard.html";
+}
+
+/* END CALL */
+function endCall() {
+  window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>

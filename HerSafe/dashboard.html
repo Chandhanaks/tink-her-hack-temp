@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HerSafe - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔝 HEADER -->
+<header class="header">
+  <div class="banner-box">
+    <img src="logo.png" alt="HerSafe Logo" class="logo-img">
+    <h1>HerSafe</h1>
+  </div>
+</header>
+
+<!-- 🌸 DASHBOARD BUTTONS -->
+<div class="dashboard-container">
+
+  <!-- 🚨 SOS -->
+  <button class="dashboard-btn" onclick="sendSOS()">🚨 SOS</button>
+
+  <!-- 👥 Emergency Contacts -->
+  <button class="dashboard-btn" onclick="window.location.href='contacts.html'">👥 Emergency Contacts</button>
+
+  <!-- 🚓 Nearest Police Station -->
+  <button class="dashboard-btn" onclick="findPolice()">🚓 Nearest Police Station</button>
+
+  <!-- 📞 Fake Call -->
+  <button class="dashboard-btn" onclick="window.location.href='fakecall.html' ">📞 Fake Call</button>
+
+  <!-- 💖 Daily Affirmation -->
+  <button class="dashboard-btn" onclick="showAffirmation()">🌸 Daily Affirmation</button>
+
+  <!--Mood Tracker-->
+  <button  class="dashboard-btn" onclick="openMoodTracker()">💌Mood & Confidence</button>
+
+  <!-- 🔒 Logout -->
+  <button class="dashboard-btn logout" onclick="logout()">Logout</button>
+
+</div>
+
+<!-- 🔊 FAKE CALL BOX -->
+
+<div id="fakeCallBox" class="fake-call" style="display:none;">
+  <h3>📞 Incoming call from Mom</h3>
+  <button onclick="acceptCall()">Accept</button>
+  <button onclick="declineCall()">Decline</button>
+
+  <div id="callActive" style="display:none; margin-top:10px;">
+    <h3>🟢 Call Connected</h3>
+    <p>Talking with Mom...</p>
+    <button onclick="endCall()">End Call</button>
+  </div>
+</div>
+
+<!-- RINGTONE AUDIO -->
+<audio id="ringtone" loop>
+  <source src="https://www.soundjay.com/phone/phone-ring-01.mp3" type="audio/mpeg">
+</audio>
+
+<script src="sos.js"></script>
+<script src="fakecall.js"></script>
+<script src="affirmations.js"></script>
+
+<script>
+  // 🔒 Check login
+  if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "index.html";
+  }
+
+  // 🚓 Find nearest police stations
+  function findPolice() {
+    window.open('https://www.google.com/maps/search/police+station+near+me', '_blank');
+  }
+
+  // 🔒 Logout
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "index.html";
+  }
+  
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
